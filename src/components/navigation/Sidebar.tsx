@@ -2,7 +2,7 @@
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import { Headphones, Users, Music, Playlist, Download, MessageCircle } from "lucide-react";
+import { Headphones, Users, Music, ListMusic, Download, MessageCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 import FriendsList from "../social/FriendsList";
 
@@ -14,7 +14,7 @@ const Sidebar = ({ isOpen = true }: SidebarProps) => {
   const navItems = [
     { name: "Discover", icon: Headphones, path: "/" },
     { name: "Your Library", icon: Music, path: "/library" },
-    { name: "Playlists", icon: Playlist, path: "/playlists" },
+    { name: "Playlists", icon: ListMusic, path: "/playlists" },
     { name: "Downloads", icon: Download, path: "/downloads" },
     { name: "Chat", icon: MessageCircle, path: "/chat" },
     { name: "Friends", icon: Users, path: "/friends" },
